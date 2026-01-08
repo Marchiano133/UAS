@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Honda Motors Indonesia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/honda_logo.png" alt="Honda Motors" height="40" class="d-inline-block align-text-top me-2">
+                <span class="brand-text">HONDA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header d-flex align-items-center">
+        <div class="container text-white text-center">
+            <h1 class="display-4 fw-bold mb-3">Produk Honda</h1>
+            <p class="lead">Koleksi Mobil Terbaru dengan Teknologi Canggih</p>
+        </div>
+    </header>
+
+    <!-- Filter Produk -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <button class="btn btn-outline-honda m-1 product-filter active" data-filter="all">Semua</button>
+                        <button class="btn btn-outline-honda m-1 product-filter" data-filter="sedan">Sedan</button>
+                        <button class="btn btn-outline-honda m-1 product-filter" data-filter="suv">SUV</button>
+                        <button class="btn btn-outline-honda m-1 product-filter" data-filter="mpv">MPV</button>
+                        <button class="btn btn-outline-honda m-1 product-filter" data-filter="hybrid">Hybrid</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Produk -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" id="product-container">
+                <!-- Civic -->
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="sedan">
+                    <div class="card product-card h-100 border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Honda Civic">
+                        <div class="card-body">
+                            <h4 class="card-title">Honda Civic</h4>
+                            <p class="card-text">Sedan sport dengan desain agresif dan teknologi terkini. Dilengkapi dengan mesin turbo 1.5L VTEC Turbo yang bertenaga.</p>
+                            <div class="specs mb-3">
+                                <span class="badge bg-honda">Turbo 1.5L</span>
+                                <span class="badge bg-honda">173 HP</span>
+                                <span class="badge bg-honda">CVT</span>
+                            </div>
+                            <div class="features">
+                                <h6>Fitur Utama:</h6>
+                                <ul>
+                                    <li>Honda Sensing</li>
+                                    <li>LED Headlight</li>
+                                    <li>Apple CarPlay & Android Auto</li>
+                                    <li>Wireless Charger</li>
+                                </ul>
+                            </div>
+                            <div class="price-info mt-3">
+                                <h5 class="text-honda">Rp 570 Jutaan</h5>
+                                <small>Harga mulai dari</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-honda w-100" data-bs-toggle="modal" data-bs-target="#civicModal">Detail Produk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CR-V -->
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="suv hybrid">
+                    <div class="card product-card h-100 border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Honda CR-V">
+                        <div class="card-body">
+                            <h4 class="card-title">Honda CR-V</h4>
+                            <p class="card-text">SUV premium 7-seater dengan teknologi hybrid i-MMD. Ruang kabin luas dan fitur keselamatan lengkap.</p>
+                            <div class="specs mb-3">
+                                <span class="badge bg-honda">Hybrid</span>
+                                <span class="badge bg-honda">AWD</span>
+                                <span class="badge bg-honda">7-Seater</span>
+                            </div>
+                            <div class="features">
+                                <h6>Fitur Utama:</h6>
+                                <ul>
+                                    <li>i-MMD Hybrid System</li>
+                                    <li>Honda Sensing 360</li>
+                                    <li>Panoramic Sunroof</li>
+                                    <li>Hands-Free Power Tailgate</li>
+                                </ul>
+                            </div>
+                            <div class="price-info mt-3">
+                                <h5 class="text-honda">Rp 790 Jutaan</h5>
+                                <small>Harga mulai dari</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-honda w-100" data-bs-toggle="modal" data-bs-target="#crvModal">Detail Produk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HR-V -->
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="suv">
+                    <div class="card product-card h-100 border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Honda HR-V">
+                        <div class="card-body">
+                            <h4 class="card-title">Honda HR-V</h4>
+                            <p class="card-text">Compact SUV dengan desain modern dan Magic Seats yang fleksibel. Cocok untuk keluarga muda perkotaan.</p>
+                            <div class="specs mb-3">
+                                <span class="badge bg-honda">1.5L DOHC</span>
+                                <span class="badge bg-honda">CVT</span>
+                                <span class="badge bg-honda">Magic Seat</span>
+                            </div>
+                            <div class="features">
+                                <h6>Fitur Utama:</h6>
+                                <ul>
+                                    <li>Ultra Seat Configuration</li>
+                                    <li>LED DRL & Headlight</li>
+                                    <li>8-inch Display Audio</li>
+                                    <li>Smart Key with Walk Away Auto Lock</li>
+                                </ul>
+                            </div>
+                            <div class="price-info mt-3">
+                                <h5 class="text-honda">Rp 410 Jutaan</h5>
+                                <small>Harga mulai dari</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-honda w-100" data-bs-toggle="modal" data-bs-target="#hrvModal">Detail Produk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BR-V -->
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="mpv">
+                    <div class="card product-card h-100 border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Honda BR-V">
+                        <div class="card-body">
+                            <h4 class="card-title">Honda BR-V</h4>
+                            <p class="card-text">MPV 7-seater dengan ground clearance tinggi. Ideal untuk keluarga besar dan kondisi jalan berbagai medan.</p>
+                            <div class="specs mb-3">
+                                <span class="badge bg-honda">1.5L i-VTEC</span>
+                                <span class="badge bg-honda">7-Seater</span>
+                                <span class="badge bg-honda">SUV Styling</span>
+                            </div>
+                            <div class="features">
+                                <h6>Fitur Utama:</h6>
+                                <ul>
+                                    <li>Ground Clearance 201mm</li>
+                                    <li>Flexible 7-Seater</li>
+                                    <li>Rear AC Blower</li>
+                                    <li>Moderate Body Impact Structure</li>
+                                </ul>
+                            </div>
+                            <div class="price-info mt-3">
+                                <h5 class="text-honda">Rp 290 Jutaan</h5>
+                                <small>Harga mulai dari</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-honda w-100" data-bs-toggle="modal" data-bs-target="#brvModal">Detail Produk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accord -->
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="sedan hybrid">
+                    <div class="card product-card h-100 border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Honda Accord">
+                        <div class="card-body">
+                            <h4 class="card-title">Honda Accord</h4>
+                            <p class="card-text">Executive sedan dengan teknologi hybrid canggih. Desain elegan dan performa efisien untuk profesional.</p>
+                            <div class="specs mb-3">
+                                <span class="badge bg-honda">Hybrid 2.0L</span>
+                                <span class="badge bg-honda">215 HP</span>
+                                <span class="badge bg-honda">Executive</span>
+                            </div>
+                            <div class="features">
+                                <h6>Fitur Utama:</h6>
+                                <ul>
+                                    <li>i-MMD Hybrid System</li>
+                                    <li>Full LED Lighting</li>
+                                    <li>Head-Up Display</li>
+                                    <li>12 Speakers Premium Audio</li>
+                                </ul>
+                            </div>
+                            <div class="price-info mt-3">
+                                <h5 class="text-honda">Rp 820 Jutaan</h5>
+                                <small>Harga mulai dari</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-honda w-100" data-bs-toggle="modal" data-bs-target="#accordModal">Detail Produk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brio -->
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="hatchback">
+                    <div class="card product-card h-100 border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Honda Brio">
+                        <div class="card-body">
+                            <h4 class="card-title">Honda Brio</h4>
+                            <p class="card-text">City car ekonomis dengan desain modern dan efisiensi bahan bakar terbaik di kelasnya. Sempurna untuk perkotaan.</p>
+                            <div class="specs mb-3">
+                                <span class="badge bg-honda">1.2L i-VTEC</span>
+                                <span class="badge bg-honda">5-Seater</span>
+                                <span class="badge bg-honda">Economy</span>
+                            </div>
+                            <div class="features">
+                                <h6>Fitur Utama:</h6>
+                                <ul>
+                                    <li>Fuel Efficient Engine</li>
+                                    <li>Compact Body</li>
+                                    <li>Easy Parking</li>
+                                    <li>Touch Panel AC</li>
+                                </ul>
+                            </div>
+                            <div class="price-info mt-3">
+                                <h5 class="text-honda">Rp 180 Jutaan</h5>
+                                <small>Harga mulai dari</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-honda w-100" data-bs-toggle="modal" data-bs-target="#brioModal">Detail Produk</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk Civic -->
+    <div class="modal fade" id="civicModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Honda Civic - Detail Spesifikasi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="img-fluid rounded" alt="Honda Civic">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Spesifikasi Teknis</h4>
+                            <ul>
+                                <li><strong>Mesin:</strong> 1.5L VTEC Turbo</li>
+                                <li><strong>Daya:</strong> 173 HP @ 5500 rpm</li>
+                                <li><strong>Torsi:</strong> 220 Nm @ 1700-5500 rpm</li>
+                                <li><strong>Transmisi:</strong> CVT dengan Paddle Shift</li>
+                                <li><strong>Konsumsi BBM:</strong> 15 km/L</li>
+                                <li><strong>Dimensi:</strong> 4658 x 1799 x 1415 mm</li>
+                            </ul>
+                            <h5 class="mt-3">Varian Tersedia:</h5>
+                            <ul>
+                                <li>Civic 1.5L Turbo</li>
+                                <li>Civic RS 1.5L Turbo</li>
+                                <li>Civic Type R (Sport)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk CR-V -->
+    <div class="modal fade" id="crvModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Honda CR-V - Detail Spesifikasi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="img-fluid rounded" alt="Honda CR-V">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Spesifikasi Teknis</h4>
+                            <ul>
+                                <li><strong>Mesin:</strong> 2.0L i-MMD Hybrid</li>
+                                <li><strong>Daya:</strong> 184 HP (kombinasi)</li>
+                                <li><strong>Transmisi:</strong> e-CVT</li>
+                                <li><strong>Konsumsi BBM:</strong> 22 km/L</li>
+                                <li><strong>Dimensi:</strong> 4696 x 1860 x 1691 mm</li>
+                                <li><strong>Kapasitas Tangki:</strong> 53 liter</li>
+                            </ul>
+                            <h5 class="mt-3">Fitur Keselamatan:</h5>
+                            <ul>
+                                <li>Honda Sensing 360</li>
+                                <li>10 Airbags</li>
+                                <li>Parking Sensor & Camera</li>
+                                <li>Auto Brake Hold</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand mb-3">
+                        <img src="images/honda-logo.png" alt="Honda" height="40" class="me-2">
+                        <span class="h4">HONDA</span>
+                    </div>
+                    <p>PT Honda Prospect Motor adalah agen pemegang merek mobil Honda di Indonesia.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Beranda</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white text-decoration-none">Produk</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Galeri</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Produk Honda</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Civic</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">CR-V</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">HR-V</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">BR-V</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Accord</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Kontak Kami</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Jl. Raya Jakarta-Bogor KM 28, Cimanggis, Depok</p>
+                    <p><i class="fas fa-phone me-2"></i>(021) 8794 8282</p>
+                    <p><i class="fas fa-envelope me-2"></i>customer.service@honda.co.id</p>
+                </div>
+            </div>
+            <hr class="bg-light my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 PT Honda Prospect Motor. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
